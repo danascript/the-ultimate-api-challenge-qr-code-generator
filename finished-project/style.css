@@ -1,0 +1,331 @@
+body {
+    background-color: #f5f2ea;
+    padding: 0 2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    display: inline-block;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+}
+
+button {
+    background-color: #fdc886;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    margin: 0.5rem auto 1.5rem;
+    border: 2px solid #fdc886;
+    border-radius: 0.5rem;
+    line-height: 1.1rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+    transition: all 0.15s ease-in-out;
+    transform: translateY(-0.2rem);
+}
+
+button:active {
+    background-color: #dea764;
+    transition: all 0.15s ease-in-out;
+    border: 2px solid #dea764;
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid #dea764;
+}
+
+button:disabled {
+    outline: none;
+    transition: none;
+    transform: none;
+    cursor: not-allowed;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-perspective: 150rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    min-width: 350px;
+    max-width: 500px;
+    width: 50%;
+    padding: 0 2rem;
+    min-height: 700px;
+
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.container header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container header h2 {
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.container header h3 {
+    margin-top: 0.2rem;
+    font-weight: 200;
+    font-size: 1rem;
+    width: 80%;
+}
+
+.setting {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='color'] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 1px solid #000000;
+    cursor: pointer;
+    height: 50px;
+    padding: 0.2rem;
+    width: 50px;
+}
+
+input[type='color']:focus {
+    outline: none;
+    border: 2px solid #dea764;
+    border-radius: 2px;
+}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::-webkit-color-swatch {
+    border: 0;
+}
+
+::-moz-color-swatch {
+    border: 1px solid #000000;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colors .setting {
+    align-items: center;
+    text-align: center;
+}
+
+.colors .setting span {
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.sub-label {
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+input[type='text'] {
+    border: 1px solid #000000;
+    padding: 0.35rem 0.85rem 0.35rem 0.4rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 0.3rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border: 1px solid #dea764;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    background: #d9d9d9;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fdc886;
+    cursor: pointer;
+    -webkit-transition: background 0.15s ease-in-out;
+    transition: background 0.15s ease-in-out;
+}
+input[type='range']::-webkit-slider-thumb:hover {
+    background: #dea764;
+}
+input[type='range']:active::-webkit-slider-thumb {
+    background: #dea764;
+}
+input[type='range']::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #fdc886;
+    cursor: pointer;
+    -moz-transition: background 0.15s ease-in-out;
+    transition: background 0.15s ease-in-out;
+}
+input[type='range']::-moz-range-thumb:hover {
+    background: #dea764;
+}
+input[type='range']:active::-moz-range-thumb {
+    background: #dea764;
+}
+input[type='range']:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #dea764;
+}
+
+::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+    border: 0;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    background-clip: content-box;
+    border: 1px solid #fdc886;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+input[type='radio']:checked {
+    background-color: #fdc886;
+}
+
+input[type='radio']:focus {
+    outline: none;
+    border: 2px solid #dea764;
+    background-color: #dea764;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+fieldset legend {
+    margin-bottom: 0.5rem;
+}
+
+fieldset div {
+    border: 1px solid #000000;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+fieldset div:last-child {
+    margin-right: 0;
+}
+
+fieldset div input {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+fieldset div label {
+    cursor: pointer;
+}
+
+.cta {
+    display: flex;
+}
+
+input.error {
+    border: 2px solid #cd4218;
+}
+
+input.error:focus {
+    border: 1px solid #cd4218;
+}
+
+.container-front.flipped {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.container-back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.container-back.flipped {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.setting img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info {
+    text-align: center;
+    margin-top: 0.2rem;
+    font-weight: 200;
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
