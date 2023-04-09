@@ -2,7 +2,7 @@
 ---
 <div>
 <b>Quick menu:</b>
-<a href="https://theultimateapichallenge.com/qr-code-generator-api" target="_blank" rel="noopener"
+<a href="https://theultimateapichallenge.com/challenges/qr-code-generator-api" target="_blank" rel="noopener"
     style="padding:0.35rem 0.7rem;
     color: black;
     background: #BDFFF3;
